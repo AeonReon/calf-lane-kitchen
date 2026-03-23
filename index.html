@@ -12,9 +12,9 @@
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --brand: #C8553D;
-            --brand-dark: #A8432F;
-            --brand-light: #f0d5cf;
+            --brand: #1e3a6e;
+            --brand-dark: #152c54;
+            --brand-light: #d6dff0;
             --dark: #1a1a1e;
             --dark-text: #f5f0eb;
             --warm: #f4f0ea;
@@ -75,9 +75,8 @@
         /* HERO */
         .hero {
             min-height: 100vh; display: flex; align-items: center; justify-content: center;
-            /* STOCK IMAGE: Replace with real photo of Calf Lane Kitchen interior or food spread */
-            background: linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.52)),
-                        url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1400&q=60') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                        url('images/hero-storefront.png') center/cover no-repeat;
             color: #fff; text-align: center; padding: 120px 20px 80px;
         }
         .hero-content { max-width: 750px; }
@@ -133,8 +132,7 @@
         .split { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .split-img {
             border-radius: 12px; overflow: hidden; height: 420px;
-            /* STOCK IMAGE: Replace with real photo of the Calf Lane Kitchen interior or owners */
-            background: url('https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&q=60') center/cover no-repeat;
+            background: url('images/hero-storefront.png') center/cover no-repeat;
         }
         .split-text h2 { margin-bottom: 18px; }
         .split-text p { color: var(--text-light); margin-bottom: 16px; }
@@ -183,15 +181,8 @@
         .owner-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .owner-img {
             height: 450px; border-radius: 12px; overflow: hidden;
-            /* PLACEHOLDER: Replace with real photo of the owner/team at Calf Lane Kitchen */
-            background: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=60') center/cover no-repeat;
+            background: url('images/team-kitchen.png') center/cover no-repeat;
             position: relative;
-        }
-        .owner-img::after {
-            content: '📷 Replace with real owner/team photo';
-            position: absolute; bottom: 12px; left: 12px;
-            background: rgba(0,0,0,0.7); color: #fff; padding: 6px 14px;
-            border-radius: 6px; font-size: 0.75rem;
         }
 
         /* VISIT / MAP / CTA SECTION */
@@ -348,7 +339,6 @@
 </nav>
 
 <!-- HERO -->
-<!-- STOCK IMAGE: Replace background with real photo of Calf Lane Kitchen food spread or interior -->
 <section class="hero" id="home">
     <div class="hero-content fade-up">
         <span class="hero-eyebrow">Coleraine's Community Café</span>
@@ -369,7 +359,6 @@
 <section class="section" id="about">
     <div class="container">
         <div class="split fade-up">
-            <!-- STOCK IMAGE: Replace with real photo of Calf Lane Kitchen interior -->
             <div class="split-img"></div>
             <div class="split-text">
                 <span class="section-eyebrow">About Us</span>
@@ -397,8 +386,7 @@
         </div>
         <div class="cards-grid fade-up">
             <div class="card">
-                <!-- STOCK IMAGE: Replace with real photo of their full Irish breakfast -->
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1533920379810-6bed1cac81b2?w=600&q=60')"></div>
+                <div class="card-img" style="background-image: url('images/full-irish-breakfast.png')"></div>
                 <div class="card-body">
                     <h3>The Full Irish Breakfast</h3>
                     <p>The one everyone talks about. Bacon, sausages, eggs, beans, toast, and all the trimmings — cooked to perfection. Served until 11:45am. From just £7.50 with coffee.</p>
@@ -432,26 +420,46 @@
             <h2 class="section-title">4.8 Stars on Google — Here's Why</h2>
             <p class="section-sub mx-auto">Don't take our word for it — hear from the people of Coleraine who keep coming back.</p>
         </div>
-        <!-- NOTE: Replace with real customer reviews from Google/TripAdvisor -->
         <div class="reviews-grid fade-up">
             <div class="review-card">
                 <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Best breakfast in Coleraine, hands down. The full Irish is unreal and the coffee is always perfect. The staff are so friendly — it feels like popping into a friend's kitchen."</p>
-                <div class="review-author">Happy Customer</div>
+                <p class="review-text">"Gorgeous little community gem of a place. We had the full Irish and eggs, avocado and sriracha on a bagel and it was all delicious. Really good vibe in there as there was good music playing and the man who worked there was so welcoming and made us feel really comfortable."</p>
+                <div class="review-author">Incogrhito</div>
                 <div class="review-source">Google Review</div>
             </div>
             <div class="review-card">
                 <div class="review-stars">★★★★★</div>
-                <p class="review-text">"We come every Sunday for the roast and it never disappoints. The kids love it too — great menu for wee ones. Proper homemade food at brilliant prices."</p>
-                <div class="review-author">Happy Customer</div>
+                <p class="review-text">"The staff in the Calf Lane Kitchen are amazing just like the food. £7.50 for a full breakfast and coffee. Not a drop of grease in sight."</p>
+                <div class="review-author">Brian Mcgonigle</div>
                 <div class="review-source">Google Review</div>
             </div>
             <div class="review-card">
                 <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Love that this place gives back to the community. The food is incredible and you can tell everything is fresh. The Tex Mex burger is a must-try!"</p>
-                <div class="review-author">Happy Customer</div>
+                <p class="review-text">"Cheap and cheerful! The staff are lovely, the food is absolutely beautiful, especially for the price of it! It honestly compares to restaurants that charge an arm and a leg!! Love this place!"</p>
+                <div class="review-author">Amy Cook</div>
                 <div class="review-source">Google Review</div>
             </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Great breakfast! Other places serve British breakfast, but they offer real Ulster fry. Relatively cheap (7.5 pounds including tea/coffee) and you will not be hungry before dinner time."</p>
+                <div class="review-author">Fernando B</div>
+                <div class="review-source">Google Review</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Friendly atmosphere, quick service, pleasant staff. Fresh, clean and comfortable surroundings. Highly recommend."</p>
+                <div class="review-author">William Boyd</div>
+                <div class="review-source">Google Review</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Homely atmosphere. Very friendly staff. Great food at a decent price. Proper down to earth."</p>
+                <div class="review-author">Ann</div>
+                <div class="review-source">Google Review</div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 30px;">
+            <a href="https://www.google.com/maps/place/The+Calf+Lane+Kitchen/@55.1325,-6.6631,17z/data=!4m8!3m7!1s0x0:0x0!8m2!3d55.1325!4d-6.6631!9m1!1b1" target="_blank" rel="noopener" class="btn-primary" style="background: var(--gold); font-size: 0.95rem;">★ See All 125+ Reviews on Google</a>
         </div>
     </div>
 </section>
@@ -460,7 +468,6 @@
 <section class="section section-dark" id="team">
     <div class="container">
         <div class="owner-section fade-up">
-            <!-- PLACEHOLDER: Replace with real photo of the owner/team -->
             <div class="owner-img"></div>
             <div>
                 <span class="section-eyebrow">The People Behind the Kitchen</span>
